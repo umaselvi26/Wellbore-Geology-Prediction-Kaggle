@@ -11,7 +11,7 @@ Raw features like 'GR' (Gamma Ray) and coordinates ('X', 'Y', 'Z') were transfor
 **Sequential Trend Modeling:** Extracted moving windows via rolling statistics ('GR_roll3', 'GR_roll10', 'GR_roll20') and deviation spreads ('GR_std10') to smooth continuous log noises.
 **Temporal Lag Features:** Utilized directional data shifts ('GR_lag1', 'GR_lag3') to teach the model how prior formations affect the current layer thickness.
 **3D Spatial Displacements:** Computed a dynamic Euclidean distance vector ('dist_3d') utilizing coordinate deltas:
-  $$\text{dist\_3d} = \sqrt{\Delta X^2 + \Delta Y^2 + \Delta Z^2}$$
+  **3D Spatial Displacements:** Computed a dynamic 3D distance feature using the coordinate deltas (X, Y, Z) to capture the physical spatial path of the       horizontal wellbore trajectory.
   This captures the physical spatial path of the horizontal wellbore trajectory.
 
 ### 2. Validation & Modeling Strategy
